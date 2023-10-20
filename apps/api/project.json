@@ -1,0 +1,147 @@
+{
+  "name": "api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/api/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "compiler": "tsc",
+        "outputPath": "dist/apps/api",
+        "main": "apps/api/src/main.ts",
+        "tsConfig": "apps/api/tsconfig.app.json",
+        "assets": ["apps/api/src/assets"],
+        "isolatedConfig": true,
+        "webpackConfig": "apps/api/webpack.config.js",
+        "generatePackageJson": true
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "build-swc": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "target": "node",
+        "compiler": "swc",
+        "outputPath": "dist/apps/api",
+        "main": "apps/api/src/main.ts",
+        "tsConfig": "apps/api/tsconfig.app.json",
+        "assets": ["apps/api/src/assets"],
+        "isolatedConfig": true,
+        "webpackConfig": "apps/api/webpack.config.js"
+      },
+      "configurations": {
+        "development": {},
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "api:build",
+        "buildTargetOptions": {
+          "progress": true
+        }
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "api:build:development"
+        },
+        "production": {
+          "buildTarget": "api:build:production"
+        }
+      }
+    },
+    "serve-swc": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "api:build-swc",
+        "buildTargetOptions": {
+          "progress": true
+        }
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "api:build-swc:development"
+        },
+        "production": {
+          "buildTarget": "api:build-swc:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/api/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/api/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    },
+    "generate-migration": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node --project apps/api/tsconfig.app.json -r tsconfig-paths/register ./node_modules/typeorm/cli migration:generate -d apps/api/src/typeorm-migration-data-source.ts apps/api/src/_migrations/{args.name}"
+      }
+    },
+    "create-migration": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node --project apps/api/tsconfig.app.json -r tsconfig-paths/register ./node_modules/typeorm/cli migration:create apps/api/src/_migrations/{args.name}"
+      }
+    },
+    "run-migrations": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node --project apps/api/tsconfig.app.json -r tsconfig-paths/register ./node_modules/typeorm/cli migration:run -d apps/api/src/typeorm-migration-data-source.ts"
+      }
+    },
+    "revert-migrations": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node --project apps/api/tsconfig.app.json -r tsconfig-paths/register ./node_modules/typeorm/cli migration:revert -d apps/api/src/typeorm-migration-data-source.ts"
+      }
+    },
+    "create-seed": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node --project apps/api/tsconfig.app.json -r tsconfig-paths/register ./node_modules/typeorm/cli migration:create apps/api/src/_seeds/{args.name}"
+      }
+    },
+    "run-seeds": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node --project apps/api/tsconfig.app.json -r tsconfig-paths/register ./node_modules/typeorm/cli migration:run -d apps/api/src/typeorm-seed-data-source.ts"
+      }
+    },
+    "revert-seeds": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node --project apps/api/tsconfig.app.json -r tsconfig-paths/register ./node_modules/typeorm/cli migration:revert -d apps/api/src/typeorm-seed-data-source.ts"
+      }
+    }
+  },
+  "tags": []
+}
