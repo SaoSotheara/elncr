@@ -34,7 +34,7 @@ import { ApplyJobDto } from './dto/apply-job.dto';
   },
   routes: {
     getOneBase: {
-      decorators: [RequiredAuth(CrudActions.READ_ONE, JobEntity)],
+      decorators: [],
     },
     deleteOneBase: {
       decorators: [RequiredAuth(CrudActions.DELETE_ONE, JobEntity)],
