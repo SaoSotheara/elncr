@@ -88,7 +88,7 @@
     "rxjs": "^7.8.1",
     "sass": "^1.69.4",
     "simplebar-react": "^3.2.4",
-    "swiper": "^9.4.1",
+    "swiper": "^11.0.1",
     "tippy.js": "^6.3.7",
     "tslib": "^2.6.2",
     "typeorm": "^0.3.17",
