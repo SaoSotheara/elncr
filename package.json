@@ -102,7 +102,7 @@
     "@nestjs/testing": "^10.2.7",
     "@nx/cypress": "17.0.0",
     "@nx/devkit": "17.0.0",
-    "@nx/eslint-plugin": "17.0.0",
+    "@nx/eslint-plugin": "17.0.3",
     "@nx/jest": "17.0.0",
     "@nx/js": "17.0.0",
     "@nx/nest": "17.0.0",
