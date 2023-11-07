@@ -344,8 +344,8 @@ devDependencies:
     specifier: 14.0.0
     version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
   '@types/cleave.js':
-    specifier: ^1.4.9
-    version: 1.4.9
+    specifier: ^1.4.11
+    version: 1.4.11
   '@types/jest':
     specifier: ^29.5.6
     version: 29.5.6
@@ -6802,8 +6802,8 @@ packages:
     resolution: {integrity: sha512-69TtiDzu0bcmKQv3yg1Zx409/Kd7r0b5F1PfpYJfSHzLGtB53547V4u+9iqKYsTu/O2ai6KTb0TInNpvuQ3qmg==}
     dev: true
 
-  /@types/cleave.js@1.4.9:
-    resolution: {integrity: sha512-EVvyGW3Hj8BsrZUB0LYcT8eKD21hhfuZFqPMOmGQBkEL/PKUUSTKM030UJt/DMKIZt/Yxhc7hn4rtrOSTQQUYg==}
+  /@types/cleave.js@1.4.11:
+    resolution: {integrity: sha512-Qwbnw+OyshxZ2kX3LZomm9I72TzFEhZqeCq4qjwl7ptFmheyf1FiMshXe36Bef2ebrqlpfnpozH9L18Pvvv3WQ==}
     dependencies:
       '@types/react': 18.2.24
     dev: true
