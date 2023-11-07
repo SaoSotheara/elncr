@@ -353,8 +353,8 @@ devDependencies:
     specifier: ^4.14.200
     version: 4.14.200
   '@types/ms':
-    specifier: ^0.7.33
-    version: 0.7.33
+    specifier: ^0.7.34
+    version: 0.7.34
   '@types/multer':
     specifier: ^1.4.9
     version: 1.4.9
@@ -7055,8 +7055,8 @@ packages:
     resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
     requiresBuild: true
 
-  /@types/ms@0.7.33:
-    resolution: {integrity: sha512-AuHIyzR5Hea7ij0P9q7vx7xu4z0C28ucwjAZC0ja7JhINyCnOw8/DnvAPQQ9TfOlCtZAmCERKQX9+o1mgQhuOQ==}
+  /@types/ms@0.7.34:
+    resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
     dev: true
 
   /@types/multer@1.4.9:
