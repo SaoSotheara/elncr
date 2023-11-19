@@ -99,7 +99,7 @@
   "devDependencies": {
     "@medusajs/ui-preset": "^1.0.2",
     "@nestjs/schematics": "10.0.2",
-    "@nestjs/testing": "^10.2.7",
+    "@nestjs/testing": "^10.2.9",
     "@nx/cypress": "17.0.0",
     "@nx/devkit": "17.0.0",
     "@nx/eslint-plugin": "17.0.0",
