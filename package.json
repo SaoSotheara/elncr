@@ -128,7 +128,7 @@
     "@types/node": "^20.8.7",
     "@types/pluralize": "^0.0.32",
     "@types/react": "18.2.24",
-    "@types/react-dom": "18.2.9",
+    "@types/react-dom": "18.2.16",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
     "@vitejs/plugin-react": "~4.0.4",
