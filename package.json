@@ -139,7 +139,7 @@
     "cypress": "^13.3.1",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.1",
-    "eslint-config-prettier": "9.0.0",
+    "eslint-config-prettier": "9.1.0",
     "eslint-plugin-cypress": "2.14.0",
     "eslint-plugin-deprecation": "^2.0.0",
     "eslint-plugin-import": "2.27.5",
