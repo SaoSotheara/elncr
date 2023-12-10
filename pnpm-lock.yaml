@@ -186,8 +186,8 @@ dependencies:
     specifier: ^13.1.1
     version: 13.1.1(react-dom@18.2.0)(react@18.2.0)
   react-calendar:
-    specifier: ^4.6.1
-    version: 4.6.1(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^4.7.0
+    version: 4.7.0(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0)
   react-chartjs-2:
     specifier: ^5.2.0
     version: 5.2.0(chart.js@4.4.0)(react@18.2.0)
@@ -15798,8 +15798,8 @@ packages:
       - react-native
     dev: false
 
-  /react-calendar@4.6.1(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-MvCPdvxEvq7wICBhFxlYwxS2+IsVvSjTcmlr0Kl3yDRVhoX7btNg0ySJx5hy9rb1eaM4nDpzQcW5c87nfQ8n8w==}
+  /react-calendar@4.7.0(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Sb+oRRbwBo1bzDByIEqMCXOh5JwklLPn3inibzvLKKXDokHo23rqtH2A9vz8LxNMJpzuPjGJ4OSuOJyhia3x5g==}
     peerDependencies:
       '@types/react': ^16.8.0 || ^17.0.0 || ^18.0.0
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
