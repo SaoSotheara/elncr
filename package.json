@@ -54,7 +54,7 @@
     "firebase": "^10.5.0",
     "firebase-admin": "^11.11.0",
     "flatpickr": "^4.6.13",
-    "framer-motion": "^10.16.4",
+    "framer-motion": "^10.16.16",
     "leaflet": "^1.9.4",
     "lodash": "^4.17.21",
     "ms": "^2.1.3",
