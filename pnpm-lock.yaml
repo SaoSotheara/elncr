@@ -105,8 +105,8 @@ dependencies:
     specifier: ^1.5.1
     version: 1.5.1
   axios-logger:
-    specifier: ^2.7.0
-    version: 2.7.0
+    specifier: ^2.7.1
+    version: 2.7.1
   chalk:
     specifier: ^5.3.0
     version: 5.3.0
@@ -8130,8 +8130,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /axios-logger@2.7.0:
-    resolution: {integrity: sha512-KtcOtObecsvZD7hKg8ucBaCgM1I4w36tn34vFJCBqe1c5qel+NSJSC2cqo8deFTIBbmmvpM8Xm2sA09+gj9Zxw==}
+  /axios-logger@2.7.1:
+    resolution: {integrity: sha512-slzf27jZuGwOoOeh3R7iV8PVMFsqkvYR39ohm5W3qg7+IM8MsMP4XV2V0Tl4PWKjPNB5UGZlzNZAeJoCn5GLDA==}
     dependencies:
       chalk: 4.1.2
       dateformat: 3.0.3
