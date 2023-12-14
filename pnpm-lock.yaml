@@ -33,8 +33,8 @@ dependencies:
     specifier: ^1.1.0
     version: 1.1.0(react@18.2.0)
   '@medusajs/ui':
-    specifier: ^2.2.0
-    version: 2.2.0(@types/react-dom@18.2.9)(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^2.2.4
+    version: 2.2.4(@types/react-dom@18.2.9)(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6)
   '@nestjs/common':
     specifier: ^10.2.7
     version: 10.2.7(class-transformer@0.5.1)(class-validator@0.14.0)(reflect-metadata@0.1.13)(rxjs@7.8.1)
@@ -3378,8 +3378,8 @@ packages:
       tailwindcss-animate: 1.0.7(tailwindcss@3.3.3)
     dev: true
 
-  /@medusajs/ui@2.2.0(@types/react-dom@18.2.9)(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-T2VdLrIQSaa2+DCWaN0sc55WS+TnQv5En2JbLVoAsbABXerYMu81uQeWtVHX5p1ojloSFtCz+cdWxMLK7uJb+Q==}
+  /@medusajs/ui@2.2.4(@types/react-dom@18.2.9)(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-YPSG1DP2Q/M3NK8J2piZii1cffjmpGb6IrEL6e6YO6cA3smYmLe6A4yMcwrgqMiAxkq2N3rj3a1Co7sioiP0rw==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -3404,9 +3404,9 @@ packages:
       '@radix-ui/react-tooltip': 1.0.7(@types/react-dom@18.2.9)(@types/react@18.2.24)(react-dom@18.2.0)(react@18.2.0)
       '@react-aria/datepicker': 3.8.0(react-dom@18.2.0)(react@18.2.0)
       '@react-stately/datepicker': 3.8.0(react@18.2.0)
-      class-variance-authority: 0.6.1
       clsx: 1.2.1
       copy-to-clipboard: 3.3.3
+      cva: 1.0.0-beta.1(typescript@5.1.6)
       date-fns: 2.30.0
       prism-react-renderer: 2.1.0(react@18.2.0)
       react: 18.2.0
@@ -3417,6 +3417,7 @@ packages:
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-dom'
+      - typescript
     dev: false
 
   /@microsoft/api-extractor-model@7.28.2(@types/node@20.8.7):
@@ -8762,12 +8763,6 @@ packages:
       libphonenumber-js: 1.10.48
       validator: 13.11.0
 
-  /class-variance-authority@0.6.1:
-    resolution: {integrity: sha512-eurOEGc7YVx3majOrOb099PNKgO3KnKSApOprXI4BTq6bcfbqbQXPN2u+rPPmIJ2di23bMwhk0SxCCthBmszEQ==}
-    dependencies:
-      clsx: 1.2.1
-    dev: false
-
   /classnames@2.3.2:
     resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
     dev: false
@@ -9487,6 +9482,18 @@ packages:
 
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+
+  /cva@1.0.0-beta.1(typescript@5.1.6):
+    resolution: {integrity: sha512-gznFqTgERU9q4wg7jfgqtt34+RUt9S5t0xDAAEuDwQEAXEgjdDkKXpLLNjwSxsB4Ln/sqWJEH7yhE8Ny0mxd0w==}
+    peerDependencies:
+      typescript: '>= 4.5.5 < 6'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      clsx: 2.0.0
+      typescript: 5.1.6
+    dev: false
 
   /cypress@13.3.1:
     resolution: {integrity: sha512-g4mJLZxYN+UAF2LMy3Znd4LBnUmS59Vynd81VES59RdW48Yt+QtR2cush3melOoVNz0PPbADpWr8DcUx6mif8Q==}
