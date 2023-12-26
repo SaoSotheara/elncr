@@ -13,7 +13,7 @@
     "@fullcalendar/react": "^6.1.9",
     "@fullcalendar/timegrid": "^6.1.9",
     "@headlessui/react": "^1.7.17",
-    "@hookform/resolvers": "^3.3.2",
+    "@hookform/resolvers": "^3.3.3",
     "@iconify/react": "^4.1.1",
     "@medusajs/icons": "^1.1.0",
     "@medusajs/ui": "^2.2.0",
