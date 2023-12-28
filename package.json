@@ -112,7 +112,7 @@
     "@nx/rollup": "17.0.0",
     "@nx/vite": "17.0.0",
     "@nx/webpack": "17.0.0",
-    "@nx/workspace": "17.0.0",
+    "@nx/workspace": "17.2.8",
     "@rollup/plugin-url": "^7.0.0",
     "@svgr/rollup": "^8.1.0",
     "@swc/cli": "~0.1.62",
