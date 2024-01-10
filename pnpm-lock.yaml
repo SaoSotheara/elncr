@@ -111,8 +111,8 @@ dependencies:
     specifier: ^5.3.0
     version: 5.3.0
   change-case:
-    specifier: ^5.0.2
-    version: 5.0.2
+    specifier: ^5.4.1
+    version: 5.4.1
   chart.js:
     specifier: ^4.4.0
     version: 4.4.0
@@ -8698,8 +8698,8 @@ packages:
     engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: false
 
-  /change-case@5.0.2:
-    resolution: {integrity: sha512-tH6YZXViaeC2/Mnt8m4gSmbZfNorC2rhwCX2bXw8SYZWr8ljCPB7iA+1TLG9t7yroWBFauc63LlOZ1gucMVCWw==}
+  /change-case@5.4.1:
+    resolution: {integrity: sha512-Agf3w7rZRy4aLy0gQ0M/fhufTIxN17rFfUuQ8OxETDJhB8QdoxgDpd9FbbFOMocR7+3wiSv8KKrFVL6HfM1Ylw==}
     dev: false
 
   /char-regex@1.0.2:
